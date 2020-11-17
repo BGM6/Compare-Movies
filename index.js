@@ -7,10 +7,15 @@ const fetchData = async (searchTerm) => {
             s: searchTerm,
         }
     })
+
+    if (response.data.Error) {
+       return [];
+    }
     return response.data.Search;
 };
 
 const input = document.querySelector('input');
+
 const onInput = async event => {
     const movies = await fetchData(event.target.value);
     for (let movie of movies) {

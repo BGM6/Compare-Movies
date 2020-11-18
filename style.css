@@ -1,3 +1,13 @@
+#navbar {
+background-color: #3b2b3a;
+}
+
+#message {
+  background-color: #3b2b3a;
+
+color: white;
+}
+
 .tutorial {
   width: 600px;
   text-align: center;
@@ -45,4 +55,8 @@ figure .image img {
 .dropdown-item img {
   height: 50px;
   margin-right: 10px;
+}
+
+.title {
+color: white;
 }

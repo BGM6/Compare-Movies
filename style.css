@@ -1,11 +1,16 @@
+body {
+  font-family: 'Goldman', cursive;
+}
+
+
 #navbar {
-background-color: #3b2b3a;
+background-color: #1ed2f4;
 }
 
 #message {
-  background-color: #3b2b3a;
+  background-color: #1ed2f4;
 
-color: white;
+color: whitesmoke;
 }
 
 .tutorial {
@@ -58,5 +63,5 @@ figure .image img {
 }
 
 .title {
-color: white;
+color: whitesmoke;
 }

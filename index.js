@@ -1,18 +1,3 @@
-// const apiKey = 5e970758
-const fetchData = async (searchTerm) => {
-    let response = await axios.get('https://www.omdbapi.com/?', {
-        params: {
-            apikey: '5e970758',
-            s: searchTerm,
-        }
-    })
-
-    if (response.data.Error) {
-        return [];
-    }
-    return response.data.Search;
-};
-
 createAutoComplete({
     root: document.querySelector('.autocomplete'),
     renderOption(movie) {
@@ -21,9 +6,30 @@ createAutoComplete({
             <img src="${imgSrc}" alt="movie poster" />
             ${movie.Title} (${movie.Year})
      `;
-    }
-});
+    },
 
+    onOptionSelect(movie) {
+        onMovieSelect(movie);
+    },
+
+    inputValue(movie) {
+        return movie.Title;
+    },
+
+    async fetchData(searchTerm) {
+        let response = await axios.get('https://www.omdbapi.com/?', {
+            params: {
+                apikey: '5e970758',
+                s: searchTerm,
+            }
+        })
+
+        if (response.data.Error) {
+            return [];
+        }
+        return response.data.Search;
+    },
+});
 
 const onMovieSelect = async movie => {
     let response = await axios.get('https://www.omdbapi.com/?', {

@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
-    />
-    <link rel="stylesheet" href="style.css"/>
+	<head lang="en">
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Goldman:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-<section id="navbar" class="hero is-bold">
-    <div class="hero-body">
-        <div  id="header" class="container">
-            <h1 class="title">
-                Movie Fight
-                <span class="icon">
-              <i class="fas fa-film"></i>
-            </span>
-            </h1>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <div class="columns">
-        <div class="column">
-            <div id="left-autocomplete"></div>
-            <div id="left-summary"></div>
-        </div>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section id="navbar" class="hero is-bold">
+			<div class="hero-body">
+				<div id="header" class="container">
+					<h1 class="title">
+						Movie Brawl
+						<span class="icon">
+							<i class="fas fa-film"></i>
+						</span>
+					</h1>
 
-        <div class="column">
-            <div id="right-autocomplete"></div>
-            <div id="right-summary"></div>
-        </div>
-    </div>
-    <div id="message" class="column is-half notification tutorial">
-        <h1 class="title">Search For a Movie on Both Sides</h1>
-        <p class="subtitle">Let the battle begin!</p>
-    </div>
-</div>
-<script src="utils.js"></script>
-<script src="autocomplete.js"></script>
-<script src="index.js"></script>
+					<div class="social">
+						<a href="https://github.com/BGM6" target="_blank"
+							><i class="fab fa-github"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/bryan-guilas-9a00891ab/"
+							target="_blank"
+							><i class="fab fa-linkedin"></i
+						></a>
+						<a href="https://wakatime.com/@BGM6" target="_blank"
+							><i class="fas fa-keyboard"></i
+						></a>
+						<a href="https://www.instagram.com/guilas03/" target="_blank"
+							><i class="fab fa-instagram"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<div class="columns">
+				<div class="column">
+					<div id="left-autocomplete"></div>
+					<div id="left-summary"></div>
+				</div>
 
-</body>
+				<div class="column">
+					<div id="right-autocomplete"></div>
+					<div id="right-summary"></div>
+				</div>
+			</div>
+			<div id="message" class="column is-half notification tutorial">
+				<h1 class="title">Search For a Movie on Both Sides</h1>
+				<p class="subtitle">Let the battle begin!</p>
+			</div>
+		</div>
+
+		<script src="utils.js"></script>
+		<script src="autocomplete.js"></script>
+		<script src="index.js"></script>
+	</body>
 </html>
